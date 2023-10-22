@@ -22,14 +22,9 @@ pipeline {
                 sh "docker push kaleemsony/my-php-website "
             }
         }
-        stage('Install Python 3') {
-            steps {
-               ansiblePlaybook credentialsId: 'test-agent', installation: 'ansible', inventory: 'servers.inv', playbook: 'python3-playbook.yml'
-            }
-        }
          stage('Install docker and its dependencies and run contianer') {
             steps {
-               ansiblePlaybook credentialsId: 'test-agent', installation: 'ansible', inventory: 'servers.inv', playbook: 'deployment-playbook.yml'
+               ansiblePlaybook credentialsId: 'test-agent', installation: 'ansible', inventory: 'servers.inv', playbook: 'deployment-docker.yml'
             }
         }
     }
