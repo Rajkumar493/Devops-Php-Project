@@ -1,4 +1,4 @@
-# EKS Devops-Php-Project
+# Devops-Php-Project
 Devops-PHP-Project edureka 
 
  Steps: 
@@ -12,3 +12,6 @@ Devops-PHP-Project edureka
  7. When any commit received pipeline job will be automatically triggered
  
  Note: It is targeted and tested only on Ubuntu 22.04
+
+# Devops-Php-Project EKS 
+
